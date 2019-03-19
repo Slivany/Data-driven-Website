@@ -1,0 +1,17 @@
+<!-- Creating header/text and referencing the navigation bar so that clicking the links will lead to the 
+  appropiate header. */ -->
+  <div id="project">
+    <h2>Our team</h2>
+    <p>Our team consists of three lovely people named, Alan, Mikkel and Simon. Al-</p>
+    <p>though we've never worked together before, we have chosen to pair up and</p>
+    <p>try to hopefully make an IT product that'll make the world a slighly better</p>
+    <p>place. Down below is shown pictures of each individual group member.</p>
+    {{#each greetings}}
+    <div class="portrait">
+      <img src="{{image}}" width="18%" height="18%" alt="{{{pname}}}">
+      <p>{{pname}}</p>
+      <h4>{{age}} years old</h4>
+      <p>{{message}}</p>
+    </div>
+    {{/each}}
+    <div><a href="/form"><h5><u>Add a member</u><h5></a></div>
